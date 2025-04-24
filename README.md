@@ -1,21 +1,21 @@
 # Start-A-Small-Dapp
 
 ```shell
-#### This project demonstrates a basic Hardhat use case. It comes with a sample contract,
+ This project demonstrates a basic Hardhat use case. It comes with a sample contract,
 
-#### a test for that contract, and a Hardhat Ignition module that deploys that contract.
+ a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-#### build solidity contract using hardhat
+ build solidity contract using hardhat
 
-#### compile smart contract use hardhat
+ compile smart contract use hardhat
 
-#### test contract using test unit
+ test contract using test unit
 
-#### set up react application to connect it with smart contract
+ set up react application to connect it with smart contract
 
-#### deploy solidity code test it with metamask
+ deploy solidity code test it with metamask
 
-#### contract-part is to store smart contract
+ contract-part is to store smart contract
 ```
 
 ```shell
@@ -31,7 +31,7 @@ npx hardhat compile (generate the artifacts[abi here] and cahe dir)
 
 npx hardhat test , npx hardhat coverage
 
-#### Let's build our web part by
+ Let's build our web part by
 npx create-react-app web-part
 
 cd web-part npm install --save ethers && npm install --save react-toastify
