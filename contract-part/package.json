@@ -1,0 +1,15 @@
+{
+  "name": "a-small-dapp-contract-part",
+  "version": "1.0.0",
+  "description": "learning how to write smart contract by solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nil",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0"
+  }
+}
