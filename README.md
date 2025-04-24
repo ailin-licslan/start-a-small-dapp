@@ -1,28 +1,65 @@
-# start-a-small-dapp
+# Start-A-Small-Dapp
 
-### build solidity contract using hardhat
+#### This project demonstrates a basic Hardhat use case. It comes with a sample contract,
 
-### compile smart contract use hardhat
+#### a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-### test contract useing test unit
+#### build solidity contract using hardhat
 
-### set up react application to connect it with smart contract
+#### compile smart contract use hardhat
 
-### deploy solidity code test it with our metamask
+#### test contract using test unit
 
-#### contract-part is to store our smart contract
+#### set up react application to connect it with smart contract
 
-#### cd contract-part npm init -t set up package
+#### deploy solidity code test it with metamask
 
-#### npm install --save-dev hardhat
+#### contract-part is to store smart contract
 
-#### npx hardhat init
+```shell
+cd contract-part npm init -t set up package
 
-#### npm install --save-dev prettier (if you need to)
+npm install --save-dev hardhat
 
-#### npx hardhat compile (generate the artifacts[abi here] and cahe dir)
+npx hardhat init
 
-#### npx hardhat test , npx hardhat coverage
+npm install --save-dev prettier (if you need to)
+
+npx hardhat compile (generate the artifacts[abi here] and cahe dir)
+
+npx hardhat test , npx hardhat coverage
+
+#### Let's build our web part by
+npx create-react-app web-part
+
+cd web-part npm install --save ethers && npm install --save react-toastify
+```
+
+```shell
+//Init project
+npx hardhat init
+
+//Test
+npx hardhat test   &  npx hardhat coverage
+
+//Compile after a change,  genreate abi
+npx hardhat compile
+
+//Start node
+npx hardhat node
+
+//Make sure that ./ignition/parameters.json has the correct params
+
+//Deploy
+npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost --parameters ./ignition/parameters.json
+
+//Copy ./artifacts/contracts/Lock.sol/Lock.json abi list to client/src/utils/Lock_ABI.json
+
+//Copy deployed address to client/src/utils/constants.js
 
 
-### Let's build our web part by 'npx create-react-app web-part'
+//front end
+npx create-react-app  web-part
+
+npm install --save ethers
+```

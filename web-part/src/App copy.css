@@ -1,0 +1,35 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.ContractInfo {
+  text-align: center;
+}
+.ContractActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContractActions input,
+.ContractActions button {
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* 按钮背景色 */
+  color: white; /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px; /* 圆角 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+button:hover {
+  background-color: #0056b3; /* 鼠标悬停时背景色变化 */
+}
