@@ -1,5 +1,6 @@
 # Start-A-Small-Dapp
 
+```shell
 #### This project demonstrates a basic Hardhat use case. It comes with a sample contract,
 
 #### a test for that contract, and a Hardhat Ignition module that deploys that contract.
@@ -15,6 +16,7 @@
 #### deploy solidity code test it with metamask
 
 #### contract-part is to store smart contract
+```
 
 ```shell
 cd contract-part npm init -t set up package
