@@ -30,7 +30,7 @@ contract Lock {
         console.log("_unlockTime is:", _unlockTime);
         console.log("msg.sender is:", msg.sender);
         unlockTime = _unlockTime;
-        //存多少钱  
+        //初始化默认给当前合约地址存多少钱  合约部署者传进来的 msg.sender
         owner = payable(msg.sender);
 
         console.log("contract address is same as msg.sender the first time to deploay contract: ", msg.sender);
